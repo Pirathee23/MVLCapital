@@ -171,7 +171,7 @@
 			if (st > 150) {
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');
-          $('.navbar-brand img').attr('src','images/Logo_Sm.png');
+          $('.navbar-brand img').attr('src','images/Logo-sm.png');
 				}
 			}
 			if (st < 150) {
