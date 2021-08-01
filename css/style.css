@@ -8816,7 +8816,7 @@ h1, h2, h3, h4, h5,
       color: #0B244F !important; }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 2px solid transparent !important;
-        background: #265b09 !important;
+        background: #0B244F !important;
         color: #fff !important; }
   .btn.btn-secondary {
     background: #a0f669 !important;
@@ -8848,7 +8848,7 @@ h1, h2, h3, h4, h5,
       color: #fff !important; }
       .btn.btn-white.btn-outline-white:hover {
         border: 1px solid transparent;
-        background: #265b09;
+        background: #0B244F;
         color: #fff; }
 
 .videos .overlay {
@@ -9015,7 +9015,7 @@ h1, h2, h3, h4, h5,
   .resume-wrap .date {
     font-weight: 900;
     font-size: 26px;
-    color: #265b09; }
+    color: #0B244F; }
   .resume-wrap h2 {
     font-size: 26px; }
   .resume-wrap .position {
