@@ -177,7 +177,7 @@
 			if (st < 150) {
 				if ( navbar.hasClass('scrolled') ) {
 					navbar.removeClass('scrolled sleep');
-          $('.navbar-brand img').attr('src','');
+          $('.navbar-brand img').attr('src','images/Logo-no-bg.png');
 				}
 			}
 			if ( st > 350 ) {

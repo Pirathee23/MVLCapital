@@ -64,6 +64,84 @@ h1, h2, h3, h4, h5,
 	color: $primary!important;
 }
 
+//=== Drawing effect
+
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+  box-shadow: inset 0 0 0 $width $color;
+  color: $color;
+  transition: color $duration $duration/3;
+  position: relative;
+
+  &::before,
+  &::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0; height: 0;
+
+    #{$vertical}: 0;
+    #{$horizontal}: 0;
+  }
+
+  &::before {
+    $h-side: if($horizontal == 'left', 'right', 'left');
+
+    border-#{$vertical}-width: $width;
+    border-#{$h-side}-width: $width;
+  }
+
+  &::after {
+    $v-side: if($vertical == 'top', 'bottom', 'top');
+
+    border-#{$v-side}-width: $width;
+    border-#{$horizontal}-width: $width;
+  }
+
+  &:hover {
+    color: $hover;
+
+    &::before,
+    &::after {
+      border-color: $hover;
+      transition: border-color 0s, width $duration, height $duration;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before { transition-delay: 0s, 0s, $duration; }
+
+    &::after { transition-delay: 0s, $duration, 0s; }
+  }
+}
+
+.draw-border {
+  @include btn-border-drawing(#58afd1, #ffe593, 4px, bottom, right);
+}
+
+//=== Button styling, semi-ignore
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+
+  &:focus { outline: 2px dotted #55d7dc; }
+}
+
+//=== Pen styling, ignore
+body {
+  background: #1f1a25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 
 .ftco-navbar-light {
 	background: transparent!important;
@@ -101,7 +179,7 @@ h1, h2, h3, h4, h5,
 			color: $white;
 		}
 	}
-	
+
 	.navbar-nav {
 		@include media-breakpoint-down(md){
 			padding-bottom: 20px;
@@ -166,7 +244,7 @@ h1, h2, h3, h4, h5,
 					color: $white;
 				}
 			}
-			
+
 			&.cta {
 				> a {
 					color: $white;
@@ -194,7 +272,7 @@ h1, h2, h3, h4, h5,
 					}
 				}
 			}
-			
+
 				.nav-link {
 					&.active {
 					background: transparent;
@@ -209,7 +287,7 @@ h1, h2, h3, h4, h5,
 					}
 				}
 			}
-			
+
 			@include media-breakpoint-down(md){
 				&.active {
 					> a {
@@ -233,7 +311,7 @@ h1, h2, h3, h4, h5,
 			outline: none !important;
 		}
 	}
-	
+
 	&.scrolled  {
 		position: fixed;
 		right: 0;
@@ -312,7 +390,7 @@ h1, h2, h3, h4, h5,
 			transition: .3s all ease-out;
 		}
 		&.sleep {
-			transition: .3s all ease-out;	
+			transition: .3s all ease-out;
 		}
 
 		.navbar-brand {
@@ -385,7 +463,7 @@ h1, h2, h3, h4, h5,
 				content: '';
 				border:1px solid rgba(255,255,255,.3);
 				@include border-radius(50%);
-			}	
+			}
 			&:hover, &:focus{
 				outline: none !important;
 			}
@@ -643,7 +721,7 @@ h1, h2, h3, h4, h5,
 			}
 		}
 	}
-} 
+}
 
 
 .hero-wrap{
@@ -930,7 +1008,7 @@ h1, h2, h3, h4, h5,
 			&:after{
 				position: absolute;
 				bottom: -15px;
-				left: 0; 
+				left: 0;
 				right: 0;
 				content: '';
 				width: 30px;
@@ -1430,9 +1508,9 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1443,7 +1521,7 @@ textarea.form-control {
     opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
@@ -1502,7 +1580,7 @@ textarea.form-control {
 	}
 }
 
-//blocks 
+//blocks
 .block-20 {
 	overflow: hidden;
 	background-size: cover;
@@ -1560,7 +1638,7 @@ textarea.form-control {
 	ul {
 		padding: 0;
 		li {
-			
+
 			&, > a {
 				display: table;
 				line-height: 1.5;
@@ -1579,7 +1657,7 @@ textarea.form-control {
 				padding-top: 2px;
 				color: rgba($white, 1);
 			}
-			
+
 		}
 	}
 }
@@ -1600,7 +1678,7 @@ textarea.form-control {
 			font-size: 16px;
 		}
 	}
-} 
+}
 
 .block-27 {
 	ul {
@@ -1926,7 +2004,7 @@ textarea.form-control {
 	background-color: rgba(255,255,255,0.9);
 	box-shadow: 0px 24px 64px rgba(0,0,0,0.24);
 	border-radius:16px;
-	opacity: 0; 
+	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s ease-out, visibility 0s linear .2s;
 	z-index:1000;
