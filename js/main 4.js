@@ -40,28 +40,31 @@
 	// Scrollax
    $.Scrollax();
 
-   // Carousal card
- $('#recipeCarousel').carousel({
-   interval: 10000
- })
+  // Carousal card
+  $(document).ready(function() {
+  $("#myCarousel").on("slide.bs.carousel", function(e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
 
- $('.carousel .carousel-item').each(function(){
-     var minPerSlide = 3;
-     var next = $(this).next();
-     if (!next.length) {
-     next = $(this).siblings(':first');
-     }
-     next.children(':first-child').clone().appendTo($(this));
-
-     for (var i=0;i<minPerSlide;i++) {
-         next=next.next();
-         if (!next.length) {
-         	next = $(this).siblings(':first');
-       	}
-
-         next.children(':first-child').clone().appendTo($(this));
-       }
- });
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide - (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end
+        if (e.direction == "left") {
+          $(".carousel-item")
+            .eq(i)
+            .appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item")
+            .eq(0)
+            .appendTo($(this).find(".carousel-inner"));
+        }
+      }
+    }
+  });
+});
 
 
 
@@ -107,6 +110,31 @@
 	onePageClick();
 
 
+	var carousel = function() {
+		$('.home-slider').owlCarousel({
+	    loop:true,
+	    autoplay: true,
+	    margin:0,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    nav:false,
+	    autoplayHoverPause: false,
+	    items: 1,
+	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
+	    responsive:{
+	      0:{
+	        items:1
+	      },
+	      600:{
+	        items:1
+	      },
+	      1000:{
+	        items:1
+	      }
+	    }
+		});
+	};
+	carousel();
 
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
