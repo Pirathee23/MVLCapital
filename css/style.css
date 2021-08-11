@@ -5155,14 +5155,12 @@ a.close.disabled {
       display: flex;
   }
 
-  /* display 3 */
+  /* display 3*/
   @media (min-width: 768px) {
-
       .carousel-inner .carousel-item-right.active,
       .carousel-inner .carousel-item-next {
         transform: translateX(33.333%);
       }
-
       .carousel-inner .carousel-item-left.active,
       .carousel-inner .carousel-item-prev {
         transform: translateX(-33.333%);
@@ -5175,19 +5173,21 @@ a.close.disabled {
   }
 
   .carousel{
-      background: #2f4357;
       margin-top: 20px;
+      z-index: 1;
   }
-
   .carousel-item{
       text-align: center;
       min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
   }
-
-  .carousel-caption {
-    text-align: center;
-    padding: 5rem 8rem;
-    background: #2f4357;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #e1e1e1;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
 .carousel .card-img-top {
@@ -5225,6 +5225,80 @@ a.close.disabled {
   margin: 0;
 }
 
+.testimonials-section {
+  /*background-color: rgba(226,230,234,1);*/
+  background-color: rgba(255,255,255,1);
+  background-blend-mode: lighten;
+}
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #FACF39;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.testimonial{
+    border: 1px solid #c9ced3;
+    border-top: 3px solid #c9ced3;
+    padding: 70px 25px 100px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.testimonial:after{
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #FACF39;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.testimonial .description{
+    font-size: 14px;
+    color: #666;
+    line-height:26px;
+}
+.testimonial .pic{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -30px;
+    left: 25px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+}
+.testimonial .testimonial-title{
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 150px;
+}
+.testimonial .testimonial-title small{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-top: 7px;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    background: #00adb7;
+}
 
 @-webkit-keyframes spinner-border {
   to {
@@ -8348,240 +8422,6 @@ h1, h2, h3, h4, h5,
       opacity: 0;
       display: none; } }
 
-.owl-carousel {
-  position: relative; }
-  .owl-carousel .owl-item {
-    opacity: .4; }
-    .owl-carousel .owl-item.active {
-      opacity: 1; }
-  .owl-carousel .owl-dots {
-    text-align: center; }
-    .owl-carousel .owl-dots .owl-dot {
-      width: 10px;
-      height: 10px;
-      margin: 5px;
-      border-radius: 50%;
-      background: #e6e6e6;
-      position: relative; }
-      .owl-carousel .owl-dots .owl-dot:after {
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: 0;
-        bottom: 0;
-        width: 14px;
-        height: 14px;
-        content: '';
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        border-radius: 50%; }
-      .owl-carousel .owl-dots .owl-dot:hover, .owl-carousel .owl-dots .owl-dot:focus {
-        outline: none !important; }
-      .owl-carousel .owl-dots .owl-dot.active {
-        background: #b3b3b3; }
-  .owl-carousel.home-slider {
-    position: relative;
-    height: 750px;
-    z-index: 0; }
-    .owl-carousel.home-slider .slider-item {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      height: 750px;
-      position: relative;
-      z-index: 0; }
-      @media (max-width: 1199.98px) {
-        .owl-carousel.home-slider .slider-item {
-          background-position: center center !important; } }
-      .owl-carousel.home-slider .slider-item .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #000000;
-        opacity: 0; }
-      .owl-carousel.home-slider .slider-item .slider-text {
-        height: 750px;
-        z-index: 0; }
-        @media (max-width: 991.98px) {
-          .owl-carousel.home-slider .slider-item .slider-text {
-            text-align: center; } }
-        .owl-carousel.home-slider .slider-item .slider-text .one-third {
-          width: 60%;
-          position: relative;
-          z-index: -1; }
-          .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #000000;
-            opacity: 0; }
-          @media (max-width: 1199.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text .one-third {
-              width: 85%; } }
-          @media (max-width: 991.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text .one-third {
-              width: 100%;
-              z-index: 0; }
-              .owl-carousel.home-slider .slider-item .slider-text .one-third .overlay {
-                opacity: .3; }
-              .owl-carousel.home-slider .slider-item .slider-text .one-third:after {
-                opacity: 0; } }
-        .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-          width: 50%;
-          position: relative; }
-          @media (min-width: 768px) {
-            .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-              position: absolute;
-              top: 0;
-              left: 0;
-              bottom: 0;
-              right: 0;
-              width: 1200px;
-              margin: 0 auto; } }
-          @media (max-width: 991.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text .one-forth {
-              width: 100%;
-              position: absolute;
-              top: 0;
-              left: 0;
-              right: 0;
-              bottom: 0;
-              z-index: 1;
-              padding: 1em; } }
-          .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
-            width: 100%; }
-            @media (min-width: 992px) {
-              .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
-                position: absolute;
-                top: 50%;
-                left: 0;
-                -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-                right: 0;
-                max-width: 50%;
-                padding-left: 45px;
-                padding-right: 3em; } }
-        .owl-carousel.home-slider .slider-item .slider-text .subheading {
-          color: #000000;
-          font-weight: 600;
-          font-size: 14px;
-          letter-spacing: 3px;
-          text-transform: uppercase;
-          color: #0B244F; }
-        .owl-carousel.home-slider .slider-item .slider-text .text {
-          position: relative;
-          z-index: 1; }
-        .owl-carousel.home-slider .slider-item .slider-text h1 {
-          font-size: 60px;
-          color: #fff;
-          line-height: 1.2;
-          font-weight: 800; }
-          .owl-carousel.home-slider .slider-item .slider-text h1 span {
-            font-weight: 800;
-            color: #0B244F; }
-          @media (max-width: 991.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text h1 {
-              color: #fff;
-              font-size: 50px; } }
-          @media (max-width: 767.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text h1 {
-              font-size: 40px; } }
-        .owl-carousel.home-slider .slider-item .slider-text h2 {
-          font-size: 30px;
-          font-weight: 400; }
-          @media (max-width: 991.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text h2 {
-              color: #fff; } }
-        .owl-carousel.home-slider .slider-item .slider-text p {
-          color: rgba(0, 0, 0, 0.8);
-          font-weight: 400; }
-          @media (max-width: 991.98px) {
-            .owl-carousel.home-slider .slider-item .slider-text p {
-              color: rgba(255, 255, 255, 0.7);
-              font-size: 23px; } }
-        .owl-carousel.home-slider .slider-item .slider-text .btn-custom {
-          bordeR: 1px solid #0B244F;
-          padding: 5px 20px;
-          text-transform: uppercase;
-          font-size: 12px;
-          letter-spacing: 3px; }
-    .owl-carousel.home-slider .owl-nav {
-      position: absolute;
-      bottom: 60px !important;
-      left: 0;
-      right: 0;
-      margin: 0 auto; }
-      @media (max-width: 991.98px) {
-        .owl-carousel.home-slider .owl-nav {
-          display: none; } }
-      .owl-carousel.home-slider .owl-nav .owl-prev,
-      .owl-carousel.home-slider .owl-nav .owl-next {
-        position: absolute;
-        width: 60px;
-        height: 60px;
-        background: #fff !important;
-        -moz-transition: all 0.7s ease;
-        -o-transition: all 0.7s ease;
-        -webkit-transition: all 0.7s ease;
-        -ms-transition: all 0.7s ease;
-        transition: all 0.7s ease;
-        opacity: 1; }
-        .owl-carousel.home-slider .owl-nav .owl-prev span:before,
-        .owl-carousel.home-slider .owl-nav .owl-next span:before {
-          font-size: 20px;
-          margin-top: 7px;
-          color: #000000; }
-      .owl-carousel.home-slider .owl-nav .owl-prev {
-        top: 0 !important;
-        right: 0 !important; }
-        @media (min-width: 992px) {
-          .owl-carousel.home-slider .owl-nav .owl-prev {
-            right: 61px !important; } }
-        .owl-carousel.home-slider .owl-nav .owl-prev:hover, .owl-carousel.home-slider .owl-nav .owl-prev:focus {
-          background: #000000 !important;
-          outline: none !important; }
-          .owl-carousel.home-slider .owl-nav .owl-prev:hover span:before, .owl-carousel.home-slider .owl-nav .owl-prev:focus span:before {
-            font-size: 20px;
-            margin-top: 7px;
-            color: #0B244F; }
-      .owl-carousel.home-slider .owl-nav .owl-next {
-        top: 0 !important;
-        right: 0 !important; }
-        @media (min-width: 992px) {
-          .owl-carousel.home-slider .owl-nav .owl-next {
-            right: 0 !important; } }
-        .owl-carousel.home-slider .owl-nav .owl-next:hover, .owl-carousel.home-slider .owl-nav .owl-next:focus {
-          background: #000000 !important;
-          outline: none !important; }
-          .owl-carousel.home-slider .owl-nav .owl-next:hover span:before, .owl-carousel.home-slider .owl-nav .owl-next:focus span:before {
-            font-size: 24px;
-            margin-top: 7px;
-            color: #0B244F; }
-    .owl-carousel.home-slider .owl-dots {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 40px;
-      width: 100%; }
-      @media (max-width: 767.98px) {
-        .owl-carousel.home-slider .owl-dots {
-          bottom: 5px; } }
-      .owl-carousel.home-slider .owl-dots .owl-dot {
-        width: 10px;
-        height: 10px;
-        margin: 5px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.4); }
-        .owl-carousel.home-slider .owl-dots .owl-dot.active {
-          background: #fff; }
-
 .hero-wrap {
   width: 100%;
   height: 100%;
@@ -8775,7 +8615,6 @@ h1, h2, h3, h4, h5,
   display: table;
   clear: both;
 }
-
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {

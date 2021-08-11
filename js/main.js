@@ -40,7 +40,7 @@
 	// Scrollax
    $.Scrollax();
 
-   // Carousal card
+  // Carousal card
  $('#recipeCarousel').carousel({
    interval: 10000
  })
@@ -63,10 +63,26 @@
        }
  });
 
+ // testimonial Slides
+ $(document).ready(function(){
+     $("#testimonial-slider").owlCarousel({
+         items:1,
+         itemsDesktop:[1000,1],
+         itemsDesktopSmall:[979,1],
+         itemsTablet:[768,1],
+         pagination:true,
+         navigation:false,
+         navigationText:["",""],
+         slideSpeed:1000,
+         singleItem:true,
+         autoplay:true,
+         autoplaySpeed: 1000,
+         autoplayTimeout: 7000,
+         loop: true
+     });
+ });
 
-
-
-   // Burger Menu
+  // Burger Menu
 	var burgerMenu = function() {
 
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
