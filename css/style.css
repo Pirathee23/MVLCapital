@@ -8669,6 +8669,108 @@ h1, h2, h3, h4, h5,
   background-color: #f1f1f1;
 }
 
+
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width:80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-header h5 {
+  margin-bottom: 3px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #0b244f;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+.teamCard {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.teamCard .card {
+  margin: 20px;
+  padding: 8px;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.teamCard .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.teamCard .card img:hover {
+  opacity:0.6;
+}
+
+.teamCard .card-info {
+  padding: 15px 0 7px;
+  text-align: center;
+}
+
+.teamCard .card-info h6 {
+  margin-bottom: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+.teamCard .card-info span {
+  margin-bottom: 5px;
+  color: #888888;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.teamCard .card-info a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 8px 2px 0;
+  color: #333333;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 30px;
+  transition: all 0.5s;
+}
+
+.teamCard .card-info a:hover:nth-child(1) {
+  color: #ffffff;
+  background-color: #1877f2;
+}
+
+.teamCard .card-info a:hover:nth-child(2) {
+  color: #ffffff;
+  background-color: #e1306c;
+}
+
+.teamCard .card-info a:hover:nth-child(3) {
+  color: #ffffff;
+  background-color: #FBBC05;
+}
+
+.teamCard .card-info a:hover:nth-child(4) {
+  color: #ffffff;
+  background-color: #0072b1;
+}
+
+
+
+
 .ftco-team .flip-card a {
   padding: 3px;
  }

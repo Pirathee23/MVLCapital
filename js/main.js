@@ -40,6 +40,20 @@
 	// Scrollax
    $.Scrollax();
 
+   //modal mathusan
+   $(document).ready(function(){
+   $('#img-one-bio').click(function(){
+       $('#modal-one-bio').modal('show')
+   });
+ });
+
+   $(document).ready(function(){
+   $('#img-two-bio').click(function(){
+       $('#modal-two-bio').modal('show')
+   });
+ });
+
+
   // Carousal card
  $('#recipeCarousel').carousel({
    interval: 10000
