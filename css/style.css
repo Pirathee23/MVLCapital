@@ -8621,6 +8621,40 @@ h1, h2, h3, h4, h5,
   background-color: #f1f1f1;
 }
 
+.accordion button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion {
+  box-shadow: none;
+  border-color: none;
+  border: 0px;
+}
+.accordion .accordion-item {
+  border-top: 0px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.FAQsection .card{
+  box-shadow: none;
+  border-color: none;
+  border: 0px;
+}
+.accordion h2{
+  text-align: center;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  background: #fff;
+  border-bottom: 1px solid #FACF39;
+
+}
+.accordion button:hover {
+  cursor: pointer;
+  color: #FACF39;
+}
+.accordion button[aria-expanded='true'] {
+  color: #FACF39;
+}
 
 
 .modal-content {
