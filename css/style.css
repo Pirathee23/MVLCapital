@@ -8683,7 +8683,7 @@ h1, h2, h3, h4, h5,
 
 .articlePage a {
   text-decoration: none;
-  color: #fff;
+  color: #6D7F97;
 }
 article {
   margin-bottom: 20px;
@@ -8771,9 +8771,10 @@ article {
   transition: all 0.25s ease;
 }
 .share-button:hover, .share-button.active {
-  background: #6D7F97;
+  background: #b3bdc9;
   color: #ECF2F8;
 }
+
 .article-title:hover,
 .author-name:hover {
   color: #FACF39; }
@@ -8930,6 +8931,41 @@ article {
   .ftco-team .counter-wrap .text p span.number {
     font-weight: 600;
     color: #0B244F; }
+
+.process-section {
+  background: #f7f7f7;
+  padding:20px 200px;
+}
+.w3-container:after,.w3-container:before,.w3-row-padding:after,.w3-row-padding:before{
+   content:"";
+   display:table;
+   clear:both
+}
+.w3-center{
+  text-align:center!important
+}
+.w3-large{
+    font-size:18px!important
+}
+.w3-quarter{
+   float:left;
+   width:100%;
+}
+@media (min-width:601px){
+   .w3-col.m3,.w3-quarter{
+       width:24.99999%
+   }
+}
+.w3-margin-bottom{
+    margin-bottom:16px!important
+}
+.w3-jumbo{
+    font-size:64px!important
+}
+.w3-quarter .text{
+   margin: 0px;
+}
+
 
 .resume-wrap {
   width: 100%;
