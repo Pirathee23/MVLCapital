@@ -5224,11 +5224,22 @@ a.close.disabled {
   padding: 0;
   margin: 0;
 }
-
 .testimonials-section {
-  /*background-color: rgba(226,230,234,1);*/
+
+}
+.parallax {
+  /*background-color: rgba(226,230,234,1);
   background-color: rgba(255,255,255,1);
-  background-blend-mode: lighten;
+  background-image: url('testimonial-bg.jpeg');*/
+  background:rgba(0, 0, 0, 0.9) url('testimonial-bg.jpeg');
+  background-blend-mode: darken;
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .owl-dots {
@@ -5240,7 +5251,7 @@ a.close.disabled {
   height: 15px;
   border-radius: 50%;
   display: inline-block;
-  background: #ccc;
+  background: #fff;
   margin: 0 3px;
 }
 .owl-dots button.owl-dot.active {
@@ -5251,8 +5262,11 @@ a.close.disabled {
 }
 
 .testimonial{
-    border: 1px solid #c9ced3;
-    border-top: 3px solid #c9ced3;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(11, 36, 79, 0.9));
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.5)60%, rgba(11, 36, 79, 0.4)60%);
+
+    border: 0px solid #c9ced3;
+    border-top: 0px solid #c9ced3;
     padding: 70px 25px 100px;
     margin-bottom: 30px;
     position: relative;
@@ -5267,9 +5281,16 @@ a.close.disabled {
     top: 20px;
     left: 25px;
 }
+.testimonials-section .heading-section h2{
+   color: #fff;
+}
+.testimonials-section .heading-section .big-2{
+   color: rgba(255, 255, 255, 0.2);
+}
+
 .testimonial .description{
     font-size: 14px;
-    color: #666;
+    color: #fff;
     line-height:26px;
 }
 .testimonial .pic{
@@ -5293,7 +5314,7 @@ a.close.disabled {
 .testimonial .testimonial-title small{
     display: block;
     font-size: 14px;
-    color: #666;
+    color: #fff;
     margin-top: 7px;
 }
 .owl-theme .owl-controls .owl-page.active span{
