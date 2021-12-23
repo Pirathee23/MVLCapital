@@ -8651,22 +8651,42 @@ h1, h2, h3, h4, h5,
   border-color: none;
   border: 0px;
   z-index: 0;
+  margin-left: 0vw;
+  margin-right: 0vw;
 }
+@media screen and (min-width: 768px) {
+  .accordion {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+@media screen and (min-width: 992px) {
+  .accordion {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+
 .accordion .accordion-item {
   border-top: 0px;
   border-bottom: 1px solid #e5e5e5;
+  background: #f7f7f7;
 }
-
-.FAQsection .card{
+.accordion button {
+  background: #f7f7f7;
+}
+.faq-questions .card{
+  background: #f7f7f7;
   box-shadow: none;
   border-color: none;
   border: 0px;
 }
 .accordion h2{
   text-align: center;
+  background: #f7f7f7;
 }
 .accordion .accordion-item button[aria-expanded='true'] {
-  background: #fff;
+  background: #f7f7f7;
   border-bottom: 1px solid #FACF39;
 }
 .accordion-button:after {
@@ -8934,7 +8954,7 @@ article {
 
 .process-section {
   background: #f7f7f7;
-  padding:20px 200px;
+  padding:20px 2vw;
 }
 .w3-container:after,.w3-container:before,.w3-row-padding:after,.w3-row-padding:before{
    content:"";
@@ -8950,10 +8970,22 @@ article {
 .w3-quarter{
    float:left;
    width:100%;
+   margin-bottom: 10vw;
 }
 @media (min-width:601px){
-   .w3-col.m3,.w3-quarter{
-       width:24.99999%
+   .w3-quarter{
+       width:24.99999%;
+       margin-bottom: 10px;
+   }
+   .process-section {
+     background: #f7f7f7;
+     padding:20px 20px;
+   }
+}
+@media (min-width:1200px){
+   .process-section {
+     background: #f7f7f7;
+     padding:20px 10vw;
    }
 }
 .w3-margin-bottom{
