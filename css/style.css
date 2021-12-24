@@ -8572,6 +8572,12 @@ h1, h2, h3, h4, h5,
     }
   }
 
+.ftco-section .about-us img{
+  margin-top: 160px;
+  max-height: 40%;
+
+}
+
 .ftco-team {
   background-color: rgba(11,36,79,0.1);
   background-blend-mode: lighten;
@@ -9098,13 +9104,17 @@ article {
   background-blend-mode: lighten;
 }
   .ftco-hireme h2 {
-    padding: 6em 0;
+    padding: 2em 0;
     padding-bottom: 0 !important;
+    margin-bottom: 0px;
     color: #fff;
-    font-size: 40px;
+    font-size: 4.5vw;
     font-weight: 900; }
     .ftco-hireme p {
+      margin-top: -10px;
+      padding-top: 0px;
       color: #ebf2f5;
+      font-size: 1.5vw;
       }
     .ftco-hireme h2 span {
       color: #FACF39; }
@@ -9557,6 +9567,13 @@ textarea.form-control {
 
 .contact-section .contact-info p a {
   color: #1a1a1a; }
+
+.contact-img .img{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
 
 .contact-section .box {
   width: 100%;
