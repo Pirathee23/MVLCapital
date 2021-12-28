@@ -5210,6 +5210,21 @@ a.close.disabled {
   background-size: cover;
 }
 
+.parallax-counter {
+  /*background-color: rgba(226,230,234,1);
+  background-color: rgba(255,255,255,1);
+  background-image: url('testimonial-bg.jpeg');*/
+  background:rgba(0, 0, 0, 0.7) url('../images/counter-bg.jpeg');
+  background-blend-mode: darken;
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .owl-dots {
   text-align: center;
   padding-top: 15px;
@@ -8577,6 +8592,9 @@ h1, h2, h3, h4, h5,
   max-height: 60%;
 
 }
+.ftco-section .posts {
+  width: 10%;
+}
 
 .ftco-team {
   background-color: rgba(11,36,79,0.1);
@@ -8970,6 +8988,74 @@ article {
 }
 .w3-quarter .text{
    margin: 0px;
+}
+
+
+
+.team-section {
+  /*background-color: rgba(226,230,234,1);*/
+  background-color: rgba(255,255,255,1);
+  background-blend-mode: lighten;
+  margin-right: -100px;
+}
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #FACF39;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.team{
+    position: relative;
+}
+.owl-theme .owl-controls .owl-page.active span{
+    background: #00adb7;
+}
+.team-section .text{
+    margin: 0;
+    padding: 0;
+  }
+.team-section .right-info{
+    margin: 0;
+    padding-left: 1em;
+}
+.team-section .subheading span{
+  margin-bottom: 0;
+}
+.team-section h1{
+  margin: 0;
+  color: #0B244F;
+  font-weight: 600;
+  font-size: 40px;
+}
+.team-section {
+  background-color: rgba(11,36,79,0.1);
+  background-blend-mode: lighten;
+  background-color: #FFF;
+}
+.team-section .img-profile-right img{
+  height: 100%;
+  z-index: 0;
+  position: relative;
+  display: block;
+}
+.team-section .img-profile-left img{
+  height: 98%;
+  width: auto;
+  z-index: 0;
+  position: relative;
+  display: block;
 }
 
 
