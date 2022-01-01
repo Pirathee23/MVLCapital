@@ -5207,19 +5207,20 @@ a.close.disabled {
   background-size: cover;
 }
 
+
 .parallax-counter {
-  /*background-color: rgba(226,230,234,1);
-  background-color: rgba(255,255,255,1);
-  background-image: url('testimonial-bg.jpeg');*/
   background:rgba(0, 0, 0, 0.7) url('../images/counter-bg.jpeg');
   background-blend-mode: darken;
   height: 100%;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+
 }
 
 .owl-nav button {
@@ -9060,7 +9061,10 @@ article {
   margin: 0;
   color: #0B244F;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 30px;
+}
+.team-section h4{
+  font-size: 20px;
 }
 .team-section {
   background-color: rgba(11,36,79,0.1);
@@ -9080,7 +9084,7 @@ article {
   position: relative;
   display: none;
 }
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   .team-section .img-profile-right img{
     height: 85%;
     width: auto;
@@ -9098,7 +9102,7 @@ article {
   .team-section h4{
     font-size: 1.1em;}
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .team-section .img-profile-right img{
     height: 97.5%;
     width: auto;
@@ -9116,7 +9120,7 @@ article {
   .team-section h4{
     font-size: 1.3em;}
 }
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .team-section .img-profile-right img{
     height: 100%;
     width: auto;
@@ -9134,16 +9138,18 @@ article {
   .team-section h4{
     font-size: 1.5em;}
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .team-section .img-profile-right img{
     height: 100%;
     width: auto;
-    padding-top: 120px;
+    padding-left: 50px;
+    padding-top: 80px;
     display: block;}
   .team-section .img-profile-left img{
-    height: 90%;
+    height: 98%;
     width: auto;
-    padding-top: 0px;
+    padding-left: 50px;
+    padding-top: 80px;
     display: block;}
   .team-section .text{
     font-size: 1em;}
