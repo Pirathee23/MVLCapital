@@ -9080,6 +9080,7 @@ article {
 .team-section .img-profile-left img{
   height: 98%;
   width: auto;
+  max-width: 100%;
   z-index: 0;
   position: relative;
   display: none;
@@ -9088,12 +9089,14 @@ article {
   .team-section .img-profile-right img{
     height: 85%;
     width: auto;
+    max-width: 100%;
     padding-top: 80px;
     display: block;}
   .team-section .img-profile-left img{
     height: 85%;
     width: auto;
-    padding-top: 60px;
+    max-width: 100%;
+padding-top: 60px;
     display: block;}
   .team-section .text{
     font-size: 0.5em;}
@@ -9106,12 +9109,14 @@ article {
   .team-section .img-profile-right img{
     height: 97.5%;
     width: auto;
-    padding-top: 60px;
+    max-width: 100%;
+padding-top: 60px;
     display: block;}
   .team-section .img-profile-left img{
     height: 96%;
     width: auto;
-    padding-top: 40px;
+    max-width: 100%;
+padding-top: 40px;
     display: block;}
   .team-section .text{
     font-size: 0.67em;}
@@ -9124,12 +9129,14 @@ article {
   .team-section .img-profile-right img{
     height: 100%;
     width: auto;
-    padding-top: 40px;
+    max-width: 100%;
+padding-top: 40px;
     display: block;}
   .team-section .img-profile-left img{
     height: 98%;
     width: auto;
-    padding-top: 0px;
+    max-width: 100%;
+padding-top: 0px;
     display: block;}
   .team-section .text{
     font-size: 0.85em;}
@@ -9142,13 +9149,15 @@ article {
   .team-section .img-profile-right img{
     height: 100%;
     width: auto;
-    padding-left: 50px;
+    max-width: 100%;
+padding-left: 50px;
     padding-top: 80px;
     display: block;}
   .team-section .img-profile-left img{
     height: 98%;
     width: auto;
-    padding-left: 50px;
+    max-width: 100%;
+padding-left: 50px;
     padding-top: 80px;
     display: block;}
   .team-section .text{
