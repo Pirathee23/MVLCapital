@@ -103,7 +103,7 @@
          itemsDesktopSmall:[979,1],
          itemsTablet:[768,1],
          pagination:true,
-         navigation:false,
+         nav:true,
          navigationText:["",""],
          slideSpeed:1000,
          singleItem:true,

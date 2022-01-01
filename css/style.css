@@ -5225,6 +5225,34 @@ a.close.disabled {
   background-size: cover;
 }
 
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: -15px;
+}
+.owl-nav button.owl-next {
+  right: -15px;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0) !important;
+}
+.owl-nav span{
+    font-size: 70px;
+    position: relative;
+    top: -5px;
+}
+.owl-nav button:focus {
+    outline: none;
+}
 .owl-dots {
   text-align: center;
   padding-top: 15px;
@@ -8277,7 +8305,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0;
         padding-bottom: 1rem;
         padding-top: 0;
-        color: #000; } }
+        color: #FFF; } }
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #000;
     border: 1px solid #FACF39;
@@ -8314,7 +8342,7 @@ h1, h2, h3, h4, h5,
       color: #FACF39; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 1) !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8586,15 +8614,6 @@ h1, h2, h3, h4, h5,
       height: 100%;
     }
   }
-
-.ftco-section .about-us img{
-  margin-top: 160px;
-  max-height: 60%;
-
-}
-.ftco-section .posts {
-  width: 10%;
-}
 
 .ftco-team {
   background-color: rgba(11,36,79,0.1);
@@ -8990,13 +9009,24 @@ article {
    margin: 0px;
 }
 
-
-
+.owl-carousel .prev-slide{
+    background: url(nav-icon.png) no-repeat scroll 0 0;
+    left: -33px;
+}
+.owl-carousel .next-slide{
+    background: url(nav-icon.png) no-repeat scroll -24px 0px;
+    right: -33px;
+}
+.owl-carousel .prev-slide:hover{
+   background-position: 0px -53px;
+}
+.owl-carousel .next-slide:hover{
+  background-position: -24px -53px;
+}
 .team-section {
   /*background-color: rgba(226,230,234,1);*/
   background-color: rgba(255,255,255,1);
   background-blend-mode: lighten;
-  margin-right: -100px;
 }
 .owl-dots {
   text-align: center;
@@ -9026,10 +9056,6 @@ article {
     margin: 0;
     padding: 0;
   }
-.team-section .right-info{
-    margin: 0;
-    padding-left: 1em;
-}
 .team-section .subheading span{
   margin-bottom: 0;
 }
@@ -9057,8 +9083,19 @@ article {
   position: relative;
   display: block;
 }
-
-
+.ftco-section .about-us img{
+  margin-top: 160px;
+  max-height: 60%;
+}
+.about-img img{
+  width: 40vw;
+  height: auto;
+}
+@media only screen and (max-width: 991.8px) {
+  .about-img img{
+    display: none;
+  }
+}
 .resume-wrap {
   width: 100%;
   margin-bottom: 30px;
