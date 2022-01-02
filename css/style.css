@@ -5247,6 +5247,16 @@ background-position: center center !important;
 .owl-nav button.owl-next {
   right: -15px;
 }
+@media only screen and (max-width: 576px) {
+  .owl-nav button.owl-prev {
+    left: 10px;
+  }
+  .owl-nav button.owl-next {
+    right: 10px;
+  }
+}
+
+
 .owl-nav button {
     position: absolute;
     top: 50%;
