@@ -8245,7 +8245,7 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000000 !important;
+      background: #0B244F !important;
       position: relative;
       top: 0;
       padding-top: 0;
@@ -9078,7 +9078,7 @@ article {
 }
 .team-section .text{
     margin: 0;
-    padding: 0;
+    padding: 0px 30px;
   }
 .team-section .subheading span{
   margin-bottom: 0;
@@ -9112,6 +9112,10 @@ article {
   display: none;
 }
 @media only screen and (min-width: 576px) {
+  .team-section .text{
+      margin: 0;
+      padding: 0px 0px;
+    }
   .team-section .img-profile-right img{
     height: 95%;
     width: auto;
