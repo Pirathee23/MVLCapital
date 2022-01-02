@@ -8,7 +8,7 @@
 	"use strict";
 
 	$(window).stellar({
-    responsive: true,
+    //responsive: true,
     parallaxBackgrounds: true,
     parallaxElements: true,
     horizontalScrolling: false,
@@ -16,14 +16,17 @@
     scrollProperty: 'scroll'
   });
 
+  //Collapse Navbar for mobile
+  $('.navbar-collapse a').click(function(){
+      $(".navbar-collapse").collapse('hide');
+  });
+
 
 	var fullHeight = function() {
-
 		$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
 		});
-
 	};
 	fullHeight();
 
@@ -109,7 +112,7 @@
          singleItem:true,
          autoplay:true,
          autoplaySpeed: 1000,
-         autoplayTimeout: 7000,
+         autoplayTimeout: 14000,
          loop: true
      });
  });
@@ -117,7 +120,6 @@
 	var burgerMenu = function() {
 
 		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
-
 			event.preventDefault();
 
 			if ( $('#ftco-nav').is(':visible') ) {
@@ -125,11 +127,7 @@
 			} else {
 				$(this).addClass('active');
 			}
-
-
-
 		});
-
 	};
 	burgerMenu();
 

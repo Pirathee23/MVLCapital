@@ -29,12 +29,12 @@
     <link rel="stylesheet" href="css/style2.css">
 
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body data-bs-spy="scroll" data-bs-target=".site-navbar-target" data-bs-offset="300">
 
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container-fluid">
-	      <a class="navbar-brand" href="index.html"><div class="logo-image"> <img src="" width="180" class="img-fluid"></div></a>
+	      <a class="navbar-brand" href="index.html"><div class="logo-image"> <img src="images/Logo-no-bg.png" width="180" class="img-fluid"></div></a>
 
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -97,7 +97,7 @@
   -->
 
     <section class="ftco-section js-fullheight ftco-hireme videos margin-top">
-      <video autoplay muted loop poster=# class="js-fullheight" id="myVideo">
+      <video autoplay muted loop poster="bg.png" class="js-fullheight" id="myVideo">
         <source src="bg4.mp4" type="video/mp4">
       </video>
       <div class="overlay"></div>
@@ -124,7 +124,7 @@
           </div>
         </div>
         <div class="row about-us">
-          <div class="col-md-12 col-lg-6">
+          <div class="col-md-12 col-lg-12">
             <div class="resume-wrap ftco-animate">
               <span class="date">Est. 2021</span>
               <h2>Real Estate Investment Firm</h2>
@@ -133,9 +133,7 @@
               <p class="mt-4">We aim to consistently deliver best-in-class returns to investors by paring opportunistic acquisitions with determined execution. MVL Capital investment performance is a result of a solutions-oriented approach to property acquisition, development, management, and divestiture. MVL Capital will continue to produce exceptional returns and services for its investors by working with partners that share the same entrepreneurial drive, operational precision, and extraordinary performance goals.</p>
             </div>
           </div>
-          <div class="col-lg-6 about-img d-flex">
-            <img class="order-md-last" src="images/about-us3.jpeg" alt="about" align="right">
-          </div>
+
         </div>
 
         <!--
@@ -168,32 +166,40 @@
         <p class="w3-center w3-large">Redefining our Processes</p>
         <div class="w3-row-padding w3-center" style="margin-top:64px">
           <div class="w3-quarter">
-            <i class="fas fa-hands-helping w3-margin-bottom w3-jumbo w3-center"></i>
-            <p class="w3-large">Acquire</p>
-            <p class="text">Continuous Analysis of <br>on/off Market Properties.</p>
-            <p class="text">Financial Modelling.</p>
-            <p class="text">Negotiations.</p>
-            <p class="text">Close the Deal.</p>
+            <i class="fas fa-search w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Discovery Call</p>
+            <p class="text">Interview with parties to <br>figure out investment goals.</p>
+            <p class="text">Based on this, a personalized plan <br>will be created for future projects.</p>
           </div>
           <div class="w3-quarter">
-            <i class="fas fa-toolbox w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Revitalize</p>
+            <i class="fas fa-handshake w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Acquisition</p>
+            <p class="text">Negotiating preferable <br>terms and price.</p>
+            <p class="text">Daily analysis of real estate <br>deals (on/off market).</p>
+            <p class="text">Seamless closing.</p>
+          </div>
+          <div class="w3-quarter">
+            <i class="fas fa-hand-holding-usd w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Stabilize</p>
+            <p class="text">Cost Management.</p>
+            <p class="text">Property Management.</p>
             <p class="text">Tenant Management.</p>
-            <p class="text">Property Improvements.</p>
-            <p class="text">Decrease Expenses.</p>
-            <p class="text">Increase Revenue Flow.</p>
+            <p class="text">Property Maintenance.</p>
           </div>
           <div class="w3-quarter">
-            <i class="fas fa-search-dollar w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Maintain</p>
-            <p class="text">Decrease Capital Cost.</p>
+            <i class="fas fa-wrench w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Monitor</p>
             <p class="text">Refinancing.</p>
+            <p class="text">Minimize ongoing expenses.</p>
+            <p class="text">Budget for forecasted costs.</p>
+            <p class="text">Continous Management.</p>
           </div>
           <div class="w3-quarter">
-            <i class="fas fa-home w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Sell or Hold</p>
-            <p class="text">Dissolve the Property.</p>
-            <p class="text">Hold and Refinance.</p>
+            <i class="fas fa-door-open w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Exit</p>
+            <p class="text">Long term hold and collect cashflow <br>while holding property for free.</p>
+            <p class="text">Sell the property for a profit.</p>
+            <p class="text">Flip for higher returning asset.</p>
           </div>
         </div>
       </div>
@@ -213,34 +219,32 @@
           <div id="team-slider" class="owl-carousel">
             <div class="team">
               <div class="row no-gutters block-9">
-                <div class="col-md-6 d-flex">
+                <div class="col-md-6 col-sm-6 d-flex">
                   <div class="pt-5 text">
                     <span class="subheading">Meet the Co-Founder.</span>
-                    <h1 class="mb-4"><span>Mathusan Selvarasa.</span></h1>
-                    <h4 class="catchphrase">A hands-on creative with more than 16 years design experience.</h4>
-                    <p>Mathusan is a natural-born entrepreneur as he had many successes and failures with his startups. His most recent venture is MVL Capital which he co-founded with his partner Vaishnavy. Mathusan is now looking to take his investment portfolio to the next level by poking into the real estate market.</p>
-                    <p>Mathusan carried his method into every detail of life and lived on his earnings with extreme frugality. He graduated from Business Technology Management at Ted Rogers School of Management with $0 debt as his investment vehicles paid it for him. He comes with a strong background in IT and business which was acquired from his multiple internships and schooling. Currently, Mathusan is pursuing his professional career by working as a consultant for a large IT MSP.</p>
-                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Mathusan reaches his goal of financial freedom? Join his journey by following @MVL_Capital & @Mathusan1997.</p>
+                    <h1 class="mb-2"><span>Mathusan Selvarasa.</span></h1>
+                    <p>Mathusan is a successful entrepreneur, striving to complete his Real Estate license. He has faced many challenges with his startups but has a few successful ones that are currently operating in Toronto. The most recent venture is MVL Capital which he co-founded with his partner Vaishnavy. Mathusan is now looking to take his investment portfolio to the next level by poking into the real estate industry.</p>
+                    <p>Mathusan carried his method into every detail of life and lived on his earnings with extreme frugality. He graduated from Business Technology Management at Ted Rogers School of Management with $0 debt as his investment vehicles paid it for him. He comes with a strong background in IT and business which was acquired from his multiple internships and schooling. Currently, Mathusan is operating a full time IT Consulting company focusing on Data Analytics.</p>
+                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Mathusan reaches his goal of financial freedom? Join the journey by following @MVL_Capital & @Mathusan1997.</p>
                   </div>
                 </div>
-                <div class="col-md-6 d-flex img-profile-right">
-                  <img class="order-md-last" src="images/mat-sm.png" alt="team" align="right">
+                <div class="col-md-6 col-sm-6 d-flex img-profile-right">
+                  <img class="order-sm-first order-md-first" src="images/mat-sm.png" alt="team" align="right">
                 </div>
               </div>
             </div>
             <div class="team">
               <div class="row no-gutters block-9">
-                <div class="col-md-6 d-flex">
+                <div class="col-md-6 col-sm-6 d-flex">
                   <div class="pt-5 text">
                     <span class="subheading">Meet the Co-Founder.</span>
-                    <h1 class="mb-4"><span>Vaishnavy Ravindiran.</span></h1>
-                    <h4 class="catchphrase">A hands-on creative with more than 16 years design experience.</h4>
-                    <p>Vaishnavy Ravindiran is the Co-Founder of MVL Capital. She combines her love for the real estate industry with her passion for education and building client relationships. Before stepping into the doors of real estate business in 2019, Vaishnavy had completed her Bachelor of Commerce at the Ted Rogers School of Management. The interest and passion for building this company came from inspiration of “Rich Dad Poor Dad.” She speaks to her client and advises then on how to become a market expert through guidance. In addition, she ensures to provide exceeding exceptional Real Estate services to guarantee confidence when doing a Joint Venture or partnering with us. Moreover, she assures your need and wants are understood to help build an investment portfolio.</p>
-                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Vaishnavy reaches her goal of financial freedom? Join her journey by following @MVL_Capital & @Vaiish.</p>
+                    <h1 class="mb-2"><span>Vaishnavy Ravindiran.</span></h1>
+                    <p>Vaishnavy Ravindiran is the Co-Founder of MVL Capital. She combines her love for the real estate industry with her passion for education and building client relationships. She is currently working towards her Mortgage license. Before stepping into the doors of real estate business in 2019, Vaishnavy had completed her Bachelor of Commerce at the Ted Rogers School of Management. The interest and passion for building this company came from inspiration of “Rich Dad Poor Dad.” She speaks to her client and advises then on how to become a market expert through guidance. In addition, she ensures to provide exceeding exceptional Real Estate services to guarantee confidence when doing a Joint Venture or partnering with us. Moreover, she assures your need and wants are understood to help build an investment portfolio.</p>
+                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Vaishnavy reaches her goal of financial freedom? Join the journey by following @MVL_Capital & @Vaiish.</p>
                   </div>
                 </div>
-                <div class="col-md-6 d-flex img-profile-left">
-                  <img class="order-md-last" src="images/vaiish-sm.png" alt="team" align="right">
+                <div class="col-md-6 col-sm-6 d-flex img-profile-left">
+                  <img class="order-sm-first order-md-first" src="images/vaiish-sm.png" alt="team" align="right">
                 </div>
               </div>
             </div>
@@ -445,39 +449,33 @@
                 <div id="testimonial-slider" class="owl-carousel">
                     <div class="testimonial">
                         <p class="description">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo."
+                            We developed a great partnership with MVL Capital. They were easy to work with and very knowledgeable.
+                            <br><br>
                         </p>
-                        <div class="pic">
-                            <img src="images/img-1.jpeg" alt="">
-                        </div>
+
                         <h3 class="testimonial-title">
-                            Williamson
-                            <small>Web Developer</small>
+                            -Mahendra S.
+                            <small>Investor</small>
                         </h3>
                     </div>
 
                     <div class="testimonial">
                         <p class="description">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo."
+                            It was a pleasure working with Mathusan he is excellent and would go back to him again in the future. He was very patient and made sure we understood all the procedures for each of the process.
                         </p>
-                        <div class="pic">
-                            <img src="images/img-2.jpeg" alt="">
-                        </div>
                         <h3 class="testimonial-title">
-                            Kristiana
-                            <small>Web Designer</small>
+                            -Andrea S.
+                            <small>Investor</small>
                         </h3>
                     </div>
                     <div class="testimonial">
                         <p class="description">
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus vel ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex volutpat a. Cras eu augue ac nisl tempor commodo."
+                            They are very passionate and committed people who provided a high-quality service, and truly cared about our needs.
+                            <br><br>
                         </p>
-                        <div class="pic">
-                            <img src="images/img-3.jpeg" alt="">
-                        </div>
                         <h3 class="testimonial-title">
-                            Steve Thomas
-                            <small>Web Designer</small>
+                            -Riya M.
+                            <small>Investor</small>
                         </h3>
                     </div>
                 </div>
@@ -496,9 +494,57 @@
           </div>
         </div>
 
-
         <div class="">
           <div class="row d-flex ">
+            <div class="col-md-4 d-flex ">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CYMKy9wBZyH/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CYMKy9wBZyH/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                            <g>
+                              <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <div style="padding-top: 8px;">
+                      <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                      <div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                      </div>
+                      <div style="margin-left: 8px;">
+                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                        <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                      </div>
+                      <div style="margin-left: auto;">
+                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                        <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                      </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                    </div>
+                  </a>
+                  <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CYMKy9wBZyH/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ontario Real Estate Investors (@mvlcapital)</a></p>
+                </div>
+              </blockquote>
+            </div>
             <div class="col-md-4 d-flex ">
               <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CX_zWnqrd4i/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                 <div style="padding:16px;"> <a href="https://www.instagram.com/p/CX_zWnqrd4i/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -549,8 +595,8 @@
               </blockquote>
             </div>
             <div class="col-md-4 d-flex ">
-              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/CXXTFu-DBPY/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <div style="padding:16px;"> <a href="https://www.instagram.com/reel/CXXTFu-DBPY/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CWtQ4h3lLC5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CWtQ4h3lLC5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
                     <div style=" display: flex; flex-direction: row; align-items: center;">
                       <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
                       <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
@@ -597,10 +643,7 @@
               </blockquote>
             </div>
           </div>
-      </div>
-
-
-
+        </div>
 
         <!--
         <article class="article-card">
@@ -659,10 +702,6 @@
          </article>
         -->
 
-
-
-
-
       </div>
     </section>
 
@@ -677,7 +716,7 @@
                 When is the perfect time to start investing?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 The answer to that is <strong>RIGHT NOW</strong>. Waiting around for the market to drop is not the right answer, because you could be missing out on potential opportunities and profits.
               </div>
@@ -689,7 +728,7 @@
                 What is the best type of Real Estate to invest in?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 There is no one right answer, there are always so many profitable investments available. However, it all depends on your long-term goals and risk level. It’s always important to research and collect information to reduce risk.
               </div>
@@ -701,7 +740,7 @@
                 What if my investment does not go as planned?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 There are chances in most situations this probably won’t occur. However, we do recommend our clients about any worst-case situation to see if they are comfortable. Thus, we would also have a plan if an investment doesn’t go as accordingly.
               </div>
@@ -713,7 +752,7 @@
                 What are some trends to look at when looking into an investment property?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 <ul>
                   <li>Demographic Trends</li>
@@ -729,7 +768,7 @@
                 How much do I need to start investing?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 This depends on your financial situation, but you can start with as little as zero dollars.
               </div>
@@ -741,9 +780,9 @@
                 Why should I invest with you?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
-                You will be working with young professionals that have...
+                You will be working with young professionals that have expertise and knowledge in Real Estate and investing. We will provide you with high quality service that will be tailored to your needs.
               </div>
             </div>
           </div>
@@ -753,7 +792,7 @@
                 What are some ways I will be able to make money as an investor?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingeight">
+            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingeight" data-bs-parent="#accordionPanelsStayOpenExample">
               <div class="accordion-body">
                 There are multiple ways but here are a few:
                 <ul>
@@ -791,7 +830,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>Toronto, Ontario, Canada</p>
+	            <p>Toronto, Ontario</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -857,10 +896,10 @@
           <div class="col-md-12 text-center">
             <div class="ftco-footer-widget mb-4">
               <ul class="ftco-footer-social list-unstyled float-md-center float-lft mt-5">
-                <li class="ftco-animate"><a href=#><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/mvlcapital"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/mvlcapital/"><span class="icon-instagram"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.linkedin.com/company/mvlcapital/"><span class="icon-linkedin"></span></a></li>
-                <li class="ftco-animate"><a href=#><span class="icon-envelope"></span></a></li>
+                <li class="ftco-animate"><a href="mailto:info@mvlcapital.ca"><span class="icon-envelope"></span></a></li>
                 <li class="ftco-animate"><a href="https://youtube.com/channel/UCltphrvrJnl0DhGuGaeB8gw"><span class="icon-youtube"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.tiktok.com/@mvlcapital"><span class="fab fa-tiktok"></span></a></li>
 
