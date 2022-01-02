@@ -5303,6 +5303,9 @@ background-position: center center !important;
 .testimonials-section .heading-section h2{
    color: #fff;
 }
+.testimonials-section .heading-section p{
+   color: #000;
+}
 .testimonials-section .heading-section .big-2{
    color: rgba(255, 255, 255, 0.2);
 }
@@ -8993,6 +8996,9 @@ article {
   margin-left: -80px;
 }
 .process-section i{
+  color: #0B244F;
+}
+.process-section h2{
   color: #0B244F;
 }
 
