@@ -112,7 +112,7 @@
          singleItem:true,
          autoplay:true,
          autoplaySpeed: 1000,
-         autoplayTimeout: 7000,
+         autoplayTimeout: 14000,
          loop: true
      });
  });

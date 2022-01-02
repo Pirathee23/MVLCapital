@@ -5329,7 +5329,7 @@ background-position: center center !important;
     color: #000;
     position: absolute;
     bottom: 17px;
-    left: 150px;
+    left: 50px;
 }
 .testimonial .testimonial-title small{
     display: block;
@@ -8702,6 +8702,7 @@ h1, h2, h3, h4, h5,
   border: 0px;
 }
 .accordion h2{
+  color: #0B244F;
   text-align: center;
   background: #f7f7f7;
 }
@@ -8985,8 +8986,16 @@ article {
   text-align:center!important
 }
 .w3-large{
-    font-size:18px!important
+    font-size: 25px!important
 }
+.process-heading {
+  text-align:center!important;
+  margin-left: -80px;
+}
+.process-section i{
+  color: #0B244F;
+}
+
 .w3-quarter{
    float:left;
    width:100%;
@@ -8994,7 +9003,7 @@ article {
 }
 @media (min-width:601px){
    .w3-quarter{
-       width:24.99999%;
+       width:20%;
        margin-bottom: 10px;
    }
    .process-section {
@@ -9005,7 +9014,7 @@ article {
 @media (min-width:1200px){
    .process-section {
      background: #f7f7f7;
-     padding:20px 10vw;
+     padding:20px 4vw;
    }
 }
 .w3-margin-bottom{
@@ -9185,7 +9194,6 @@ article {
   .team-section h4{
     font-size: 1.5em;}
 }
-
 
 .ftco-section .about-us img{
   margin-top: 160px;
@@ -9644,6 +9652,7 @@ textarea.form-control {
     .heading-section h1.big.big-2 {
       right: 0; }
   .heading-section h2 {
+    color: #0B244F;
     font-size: 50px;
     font-weight: 700; }
     .heading-section h2 span {
@@ -9820,7 +9829,7 @@ textarea.form-control {
       color: #fff;
       border: 1px solid transparent; }
 
-.contact-section .contact-info p a {
+.contact-section .contact-info p a,p {
   color: #1a1a1a; }
 
 .contact-img .img{
