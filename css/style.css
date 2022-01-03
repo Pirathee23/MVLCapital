@@ -3519,6 +3519,12 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
+@media (max-width: 600px) {
+  .navbar-brand {
+    margin-left: 0.5rem !important;
+  }
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5314,7 +5320,7 @@ background-position: center center !important;
    color: #fff;
 }
 .testimonials-section .heading-section p{
-   color: #000;
+   color: rgba(255, 255, 255, 0.8);
 }
 .testimonials-section .heading-section .big-2{
    color: rgba(255, 255, 255, 0.2);
