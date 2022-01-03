@@ -3512,7 +3512,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  margin-left: 5rem !important;
+  margin-left: 1rem !important;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -3521,7 +3521,8 @@ input[type="button"].btn-block {
 
 @media (max-width: 600px) {
   .navbar-brand {
-    margin-left: 0.5rem !important;
+    margin-left: 1rem !important;
+    vertical-align: middle;
   }
 }
 
