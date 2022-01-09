@@ -44,7 +44,7 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#resume-section" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#resume-section" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   About
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -56,7 +56,7 @@
             <li class="nav-item"><a href="#services-section" class="nav-link"><span>Portfolio</span></a></li>
             <li class="nav-item"><a href="#testimonials-section" class="nav-link"><span>Testimonials</span></a></li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#projects-section" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#projects-section" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Resources
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -71,7 +71,7 @@
 	  </nav>
 
 
-    <section class="ftco-section js-fullheight ftco-hireme videos margin-top">
+    <section class="ftco-section js-fullheight ftco-hireme videos margin-top" id="ftco-nav">
       <video autoplay muted loop poster="bg.png" class="js-fullheight" id="myVideo">
         <source src="bg4.mp4" type="video/mp4">
       </video>
@@ -81,7 +81,8 @@
           <div class="col-md-12 ftco-animate text-center">
             <h2># THINK <span>RICHLY</span></h2>
             <p>Ready to take your investment portfolio to the next level?</p>
-            <button onclick="window.location.href='#resume-section';" class="btnn draw-border">Read More</button>
+            <a href="#resume-section" class="btnn draw-border"><span>Read More</span></a>
+            <!--<button onclick="window.location.href='#resume-section';" class="btnn draw-border">Read More</button>-->
           </div>
         </div>
       </div>
@@ -91,7 +92,7 @@
       <div class="container">
         <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">About</h1>
+            <h1 class="big big-2 d-none d-lg-block">About</h1>
             <h2 class="mb-4">About Us</h2>
             <p>Who we are and what we do.</p>
           </div>
@@ -159,7 +160,7 @@
     	<div class="container">
         <div class="row justify-content-center pb-3">
           <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Team</h1>
+            <h1 class="big big-2 d-none d-lg-block">Team</h1>
             <h2 class="mb-4">Meet the Team</h2>
             <p>Meet the Members of the Real Estate Investment Firm.</p>
           </div>
@@ -172,9 +173,9 @@
                   <div class="pt-5 text">
                     <span class="subheading">Meet the Co-Founder.</span>
                     <h1 class="mb-2"><span>Mathusan Selvarasa.</span></h1>
-                    <p>Mathusan is a successful entrepreneur, striving to complete his Real Estate license. He has faced many challenges with his startups but has a few successful ones that are currently operating in Toronto. The most recent venture is MVL Capital which he co-founded with his partner Vaishnavy. Mathusan is now looking to take his investment portfolio to the next level by poking into the real estate industry.</p>
-                    <p>Mathusan carried his method into every detail of life and lived on his earnings with extreme frugality. He graduated from Business Technology Management at Ted Rogers School of Management with $0 debt as his investment vehicles paid it for him. He comes with a strong background in IT and business which was acquired from his multiple internships and schooling. Currently, Mathusan is operating a full time IT Consulting company focusing on Data Analytics.</p>
-                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Mathusan reaches his goal of financial freedom? Join the journey by following @MVL_Capital & @Mathusan1997.</p>
+                    <p>Mathusan is the president and co-founder of MVL Capital, a Toronto-based real estate investment firm. Mr. Selvarasa began investing in real estate and the money market at the age of 17 and has since amassed a substantial investment portfolio. With over 5 years of industry experience, he plans to expand MVL Capital into a multi-million-dollar organization in the next few years.</p>
+                    <p>Mathusan has a demonstrated track record of launching profitable businesses and systems, one of which is a Toronto-based IT consulting firm specializing in data analytics. Mathusan is currently focusing solely on real estate, intending to become an accredited real estate agent to better serve his clients. Strategic thinking, planning, execution, negotiation, and relationship building are among his specialties.</p>
+                    <p>Are you interested in becoming a future MVL Capital investor? Or perhaps you'd want to follow the progress of MVL Capital and Mathusan? Follow <a href="https://www.instagram.com/mvlcapital/">@MVLCapital</a> & <a href="https://www.instagram.com/mathusan1997/">@Mathusan1997</a> to join the journey.</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 d-flex img-profile-right">
@@ -188,8 +189,9 @@
                   <div class="pt-5 text">
                     <span class="subheading">Meet the Co-Founder.</span>
                     <h1 class="mb-2"><span>Vaishnavy Ravindiran.</span></h1>
-                    <p>Vaishnavy Ravindiran is the Co-Founder of MVL Capital. She combines her love for the real estate industry with her passion for education and building client relationships. She is currently working towards her Mortgage license. Before stepping into the doors of real estate business in 2019, Vaishnavy had completed her Bachelor of Commerce at the Ted Rogers School of Management. The interest and passion for building this company came from inspiration of “Rich Dad Poor Dad.” She speaks to her client and advises then on how to become a market expert through guidance. In addition, she ensures to provide exceeding exceptional Real Estate services to guarantee confidence when doing a Joint Venture or partnering with us. Moreover, she assures your need and wants are understood to help build an investment portfolio.</p>
-                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Vaishnavy reaches her goal of financial freedom? Join the journey by following @MVL_Capital & @Vaiish.</p>
+                    <p>Vaishnavy Ravindiran is the founding partner of MVL Capital, a Toronto-based real estate investment firm. Ms. Ravindiran blends her enthusiasm for real estate with her commitment to education and the development of strong client relationship building. She is now pursuing to become a Mortgage Advisor to assist potential investors and further scale the business.</p>
+                    <p>Vaishnavy earned a Bachelor of Commerce from the Ted Rogers School of Management, with a focus on real estate and law, before entering the real estate industry in 2019. The book "Rich Dad, Poor Dad" sparked Vaishnavy's curiosity and desire for starting this business. She connects with her clients and provides recommendations on how to become a market expert and provides above-and-beyond services.</p>
+                    <p>Are you interested in becoming a future MVL Capital investor? Or perhaps you'd want to watch how Vaishnavy achieves her aim of financial independence? Follow <a href="https://www.instagram.com/mvlcapital/">@MVLCapital</a> & <a href="https://www.instagram.com/vaiish/">@Vaiish</a> to join her on her journey.</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 d-flex img-profile-left">
@@ -201,6 +203,7 @@
         </div>
         <div class="teamCard mobile-version d-md-none">
           <div class="card">
+            <button id="img-one-bio">View  <i class="fas fa-external-link-alt"></i></button>
             <img role="button" id="img-one-bio" src="images/mat2.png"/>
             <div class="modal fade" id="modal-one-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
               <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
@@ -211,9 +214,9 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Mathusan is a successful entrepreneur, striving to complete his Real Estate license. He has faced many challenges with his startups but has a few successful ones that are currently operating in Toronto. The most recent venture is MVL Capital which he co-founded with his partner Vaishnavy. Mathusan is now looking to take his investment portfolio to the next level by poking into the real estate industry.</p>
-                    <p>Mathusan carried his method into every detail of life and lived on his earnings with extreme frugality. He graduated from Business Technology Management at Ted Rogers School of Management with $0 debt as his investment vehicles paid it for him. He comes with a strong background in IT and business which was acquired from his multiple internships and schooling. Currently, Mathusan is operating a full time IT Consulting company focusing on Data Analytics.</p>
-                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Mathusan reaches his goal of financial freedom? Join the journey by following @MVL_Capital & @Mathusan1997.</p>
+                    <p>Mathusan is the president and co-founder of MVL Capital, a Toronto-based real estate investment firm. Mr. Selvarasa began investing in real estate and the money market at the age of 17 and has since amassed a substantial investment portfolio. With over 5 years of industry experience, he plans to expand MVL Capital into a multi-million-dollar organization in the next few years.</p>
+                    <p>Mathusan has a demonstrated track record of launching profitable businesses and systems, one of which is a Toronto-based IT consulting firm specializing in data analytics. Mathusan is currently focusing solely on real estate, intending to become an accredited real estate agent to better serve his clients. Strategic thinking, planning, execution, negotiation, and relationship building are among his specialties.</p>
+                    <p>Are you interested in becoming a future MVL Capital investor? Or perhaps you'd want to follow the progress of MVL Capital and Mathusan? Follow <a href="https://www.instagram.com/mvlcapital/">@MVLCapital</a> & <a href="https://www.instagram.com/mathusan1997/">@Mathusan1997</a> to join the journey.</p>
                   </div>
                   <div class="modal-footer">
                   </div>
@@ -233,6 +236,7 @@
           </div>
 
           <div class="card">
+            <button id="img-two-bio">View  <i class="fas fa-external-link-alt"></i></button>
             <img role="button" id="img-two-bio" src="images/vaiish2.jpeg"/>
             <div class="modal fade" id="modal-two-bio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
               <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
@@ -243,8 +247,9 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    <p>Vaishnavy Ravindiran is the Co-Founder of MVL Capital. She combines her love for the real estate industry with her passion for education and building client relationships. She is currently working towards her Mortgage license. Before stepping into the doors of real estate business in 2019, Vaishnavy had completed her Bachelor of Commerce at the Ted Rogers School of Management. The interest and passion for building this company came from inspiration of “Rich Dad Poor Dad.” She speaks to her client and advises then on how to become a market expert through guidance. In addition, she ensures to provide exceeding exceptional Real Estate services to guarantee confidence when doing a Joint Venture or partnering with us. Moreover, she assures your need and wants are understood to help build an investment portfolio.</p>
-                    <p>Are you interested to become a potential investor for MVL Capital? Or want to see how Vaishnavy reaches her goal of financial freedom? Join the journey by following @MVL_Capital & @Vaiish.</p>
+                    <p>Vaishnavy Ravindiran is the founding partner of MVL Capital, a Toronto-based real estate investment firm. Ms. Ravindiran blends her enthusiasm for real estate with her commitment to education and the development of strong client relationship building. She is now pursuing to become a Mortgage Advisor to assist potential investors and further scale the business.</p>
+                    <p>Vaishnavy earned a Bachelor of Commerce from the Ted Rogers School of Management, with a focus on real estate and law, before entering the real estate industry in 2019. The book "Rich Dad, Poor Dad" sparked Vaishnavy's curiosity and desire for starting this business. She connects with her clients and provides recommendations on how to become a market expert and provides above-and-beyond services.</p>
+                    <p>Are you interested in becoming a future MVL Capital investor? Or perhaps you'd want to watch how Vaishnavy achieves her aim of financial independence? Follow <a href="https://www.instagram.com/mvlcapital/">@MVLCapital</a> & <a href="https://www.instagram.com/vaiish/">@Vaiish</a> to join her on her journey.</p>
                   </div>
                   <div class="modal-footer">
                   </div>
@@ -309,7 +314,7 @@
     	<div class="container">
     		<div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Real Estate</h1>
+          	<h1 class="big big-2 d-none d-lg-block">Real Estate</h1>
             <h2 class="mb-4">Portfolio</h2>
             <p>Let's build this togather.</p>
           </div>
@@ -378,7 +383,7 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Testimonials</h1>
+          	<h1 class="big big-2 d-none d-lg-block">Testimonials</h1>
             <h2 class="mb-4">Testimonials</h2>
             <p>What our clients had to say.</p>
           </div>
@@ -425,13 +430,61 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resources</h1>
+          	<h1 class="big big-2 d-none d-lg-block">Resources</h1>
             <h2 class="mb-4">Your Resources</h2>
             <p>Tips and insights to help your journey.</p>
           </div>
         </div>
         <div class="">
-          <div class="row d-flex ">
+          <div class="row d-flex">
+            <div class="col-md-4 d-flex ">
+              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CYRKFvUL0kE/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CYRKFvUL0kE/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                    <div style=" display: flex; flex-direction: row; align-items: center;">
+                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                      </div>
+                    </div>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                            <g>
+                              <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                            </g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <div style="padding-top: 8px;">
+                      <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                      <div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                      </div>
+                      <div style="margin-left: 8px;">
+                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                        <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                      </div>
+                      <div style="margin-left: auto;">
+                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                        <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                      </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                    </div>
+                  </a>
+                </div>
+              </blockquote>
+            </div>
             <div class="col-md-4 d-flex ">
               <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CYMKy9wBZyH/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                 <div style="padding:16px;"> <a href="https://www.instagram.com/p/CYMKy9wBZyH/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
@@ -527,54 +580,6 @@
                     </div>
                   </a>
                   <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CX_zWnqrd4i/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Ontario Real Estate Investors (@mvlcapital)</a></p>
-                </div>
-              </blockquote>
-            </div>
-            <div class="col-md-4 d-flex ">
-              <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CWtQ4h3lLC5/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <div style="padding:16px;"> <a href="https://www.instagram.com/p/CWtQ4h3lLC5/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                    <div style=" display: flex; flex-direction: row; align-items: center;">
-                      <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                      </div>
-                    </div>
-                    <div style="padding: 19% 0;"></div>
-                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                            <g>
-                              <path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
-                            </g>
-                          </g>
-                        </g>
-                      </svg></div>
-                    <div style="padding-top: 8px;">
-                      <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div>
-                    </div>
-                    <div style="padding: 12.5% 0;"></div>
-                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-                      <div>
-                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
-                        <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
-                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
-                      </div>
-                      <div style="margin-left: 8px;">
-                        <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
-                        <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
-                      </div>
-                      <div style="margin-left: auto;">
-                        <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
-                        <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
-                        <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
-                      </div>
-                    </div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
-                      <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
-                    </div>
-                  </a>
                 </div>
               </blockquote>
             </div>
@@ -686,12 +691,11 @@
       </div>
     </section>
 
-
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
+            <h1 class="big big-2 d-none d-lg-block">Contact</h1>
             <h2 class="mb-4">Contact Us</h2>
             <p>Have a question or want to work togather?</p>
           </div>
@@ -734,31 +738,6 @@
 	          </div>
           </div>
         </div>
-
-    <!--    <div class="row no-gutters block-9">
-          <div class="col-md-6 mt-4 mb-4 order-md-last d-flex">
-            <form action="#contact-section" method="post" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <input name="subject" type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="message" id="" cols="30" rows="2" class="form-control" placeholder="Message" required></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          </div>
-          <div class="col-md-6 contact-img d-flex">
-          	<div class="img" style="background-image: url(images/contact9.jpeg);"></div>
-          </div>
-        </div> -->
       </div>
     </section>
 
