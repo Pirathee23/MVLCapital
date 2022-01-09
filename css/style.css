@@ -4851,7 +4851,8 @@ a.close.disabled {
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5; }
+  line-height: 1.5; 
+}
 
 .modal-body {
   position: relative;
@@ -8896,7 +8897,17 @@ article {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
+.teamCard .card button:first-child {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #0B244F;
+  border: none;
+}
+.teamCard .card i {
+  text-align: right;
+}
+
 .teamCard .card img {
+  padding-top: 8px;
   display: block;
   width: 100%;
   height: auto;
@@ -8912,6 +8923,7 @@ article {
 }
 
 .teamCard .card-info h6 {
+  color: #0B244F;
   margin-bottom: 3px;
   font-size: 16px;
   font-weight: 700;
