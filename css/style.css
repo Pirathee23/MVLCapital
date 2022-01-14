@@ -4851,7 +4851,7 @@ a.close.disabled {
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 .modal-body {
@@ -8746,6 +8746,9 @@ h1, h2, h3, h4, h5,
 .articlePage a {
   text-decoration: none;
   color: #6D7F97;
+}
+.articlePage blockquote {
+  min-height: 500px;
 }
 article {
   margin-bottom: 20px;
